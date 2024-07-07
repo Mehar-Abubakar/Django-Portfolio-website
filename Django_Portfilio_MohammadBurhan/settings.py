@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-85t%)xy5tujn&^s3t2(9$c261e^%o)_9d(sk0d78ku#i^vxhj0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -77,15 +77,10 @@ WSGI_APPLICATION = 'Django_Portfilio_MohammadBurhan.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': os.getenv('DB_PORT', '5432'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 
 # Password validation
@@ -124,9 +119,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-# STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfileS_build","static")
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 
 
