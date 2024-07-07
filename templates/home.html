@@ -9,7 +9,266 @@
   <title>Developer M.Abubakar</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-GNQhEKwU5ceSjJOK4ijYVcpIS4eF8/cYlLV/NN1UZis5KlTBtvZ5bPt3U0wBwPus" crossorigin="anonymous">
+<!-- Bootstrap Icons CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Your custom CSS -->
+<style>
+  .contact {
+    padding: 80px 0;
+  }
 
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
+    color: #007bff;
+  }
+
+  .section-title p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #6c757d;
+  }
+
+  .info {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .info .address,
+  .info .email,
+  .info .phone,
+  .info .skype,
+  .info .linkedin {
+    margin-bottom: 15px;
+  }
+
+  .info h4 {
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .info p {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 0;
+  }
+
+  .info .linkedin a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .info .linkedin a:hover {
+    text-decoration: underline;
+  }
+
+  .php-email-form {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .php-email-form label {
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  .php-email-form .form-control {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .php-email-form textarea.form-control {
+    height: 150px;
+  }
+
+  .php-email-form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .php-email-form .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  /* Customize styles here */
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .about-section .profile-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .about-section .content {
+    padding-left: 30px;
+  }
+
+  .about-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .about-section ul li {
+    margin-bottom: 10px;
+  }
+  .skills-section {
+    padding: 60px 0;
+  }
+
+  .skills-section .progress {
+    margin-bottom: 20px;
+  }
+
+  .skills-section .progress .skill {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  
+    /* Customize styles here */
+    .resume-section {
+      padding: 60px 0;
+    }
+
+    .resume-section .resume-item {
+      margin-bottom: 15px;
+    }
+
+    .resume-section .resume-item ul {
+      padding-left: 20px;
+    }
+
+    .download-button {
+      max-width: 200px;
+    }
+    .portfolio-section {
+      padding: 80px 0;
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .section-title h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .section-title p {
+      font-size: 18px;
+      color: #666;
+      margin-top: 20px;
+    }
+    
+    .row {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .portfolio-item {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .portfolio-item:hover {
+      transform: translateY(-10px);
+    }
+    
+    .portfolio-wrap {
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+    
+    .portfolio-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    
+    .portfolio-wrap:hover img {
+      transform: scale(1.1);
+    }
+    
+    .portfolio-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      transition: background-color 0.3s ease;
+      transform: translateY(100%);
+    }
+    
+    .portfolio-item:hover .portfolio-info {
+      transform: translateY(0);
+    }
+    
+    .portfolio-info h4 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .portfolio-info p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    .portfolio-links {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .portfolio-links a {
+      display: inline-block;
+      margin: 0 5px;
+      font-size: 20px;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .portfolio-links a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    @media (max-width: 768px) {
+      .portfolio-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+ 
+</style>
   <!-- Favicons -->
   <link href="{% static 'img/favicon.png' %}" rel="icon">
   <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
@@ -81,8 +340,9 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>M.Abubakar</h1>
-      <p>I'm <span class="typed"
-          data-typed-items="Designer, Developer, Freelancer, Full-Stack Developer, Python Developer."></span></p>
+      <p>I'm Designer, Developer, Freelancer,<br>
+         Full-Stack Developer, Python Developer.<span class="typed"
+          data-typed-items=""></span></p>
     </div>
 
   </section><!-- End Hero -->
@@ -92,7 +352,7 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
+    {% comment %} <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
 
@@ -139,12 +399,60 @@
         </div>
 
       </div>
-    </section><!-- End About Section -->
-
+    </section><!-- End About Section --> {% endcomment %}
+    <section id="about" class="about-section">
+      <div class="container">
+  
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>
+            I am M.Abubakar, a developer with experience in Python, as well as a range of other skills including full
+            stack development, JavaScript, Bootstrap, and Figma. I have completed several individual projects and am always
+            looking for new opportunities and challenges to improve my skills and advance my career. I am currently seeking
+            new opportunities and am excited to tackle challenging problems and grow as a developer.
+          </p>
+        </div>
+  
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <img src="img/profileimg.jpg" class="profile-img img-fluid" alt="Profile Image">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Python & Web Developer</h3>
+            <p class="fst-italic">JavaScript & Full-Stack.</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span><a
+                        href="www.example.com">www.example.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+92 300 0236952</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>maharabubakr616@gmail.com</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Technology</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lahore, Pakistan</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Opportunities:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+  
+    <!-- Bootstrap JS Bundle (Bootstrap JS + Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
 
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    {% comment %} <section id="skills" class="skills section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -156,82 +464,133 @@
             new languages and technologies.</p>
         </div>
 
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
+        <section id="skills" class="skills section-bg">
+          <div class="container" data-aos="fade-up">
+        
+            <div class="section-title">
+              <h2>Skills</h2>
             </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+        
+            <div class="row skills-content">
+        
+              <div class="col-lg-6" data-aos="fade-up">
+        
+                <div class="progress">
+                  <span class="skill">HTML <i class="val">100%</i></span>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        
+                <div class="progress">
+                  <span class="skill">CSS <i class="val">80%</i></span>
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
+        
+                <div class="progress">
+                  <span class="skill">JavaScript <i class="val">60%</i></span>
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+        
               </div>
+        
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        
+                <div class="progress">
+                  <span class="skill">Python <i class="val">80%</i></span>
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+        
+                <div class="progress">
+                  <span class="skill">WordPress/CMS <i class="val">40%</i></span>
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+        
+                <div class="progress">
+                  <span class="skill">Bootstrap <i class="val">75%</i></span>
+                  <div class="progress-bar bg-secondary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+        
+                <div class="progress">
+                  <span class="skill">Git, GitHub, GitLab <i class="val">90%</i></span>
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+        
+              </div>
+        
             </div>
+        
+          </div>
+        </section><!-- End Skills Section -->
+        
+    <!-- ======= Resume Section ======= --> {% endcomment %}
+    
+  <section id="skills" class="skills-section section-bg">
+    <div class="container">
 
+      <div class="section-title">
+        <h2>Skills</h2>
+        <p>I am proficient in a variety of programming languages including Python, JavaScript. I have
+          experience building full stack web applications using frameworks such as Django , and am
+          comfortable working with front-end technologies such as HTML, CSS and beck-end such as python. In addition to my experience
+          with web developmen. I am always looking to expand my skillset and am open to learning
+          new languages and technologies.</p>
+      </div>
+
+      <div class="row skills-content">
+        <div class="col-lg-6">
+          <div class="progress">
+            <span class="skill">HTML <i class="val">100%</i></span>
+            <div class="progress-bar bg-success" style="width: 100%;" role="progressbar" aria-valuenow="100"
+              aria-valuemin="0" aria-valuemax="100"></div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">40%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">BootStrap <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            
-
-            <div class="progress">
-              <span class="skill">Git, Github, Gitlab<i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            
-
+          <div class="progress">
+            <span class="skill">CSS <i class="val">80%</i></span>
+            <div class="progress-bar bg-info" style="width: 80%;" role="progressbar" aria-valuenow="80"
+              aria-valuemin="0" aria-valuemax="100"></div>
           </div>
 
+          <div class="progress">
+            <span class="skill">JavaScript <i class="val">60%</i></span>
+            <div class="progress-bar bg-warning" style="width: 60%;" role="progressbar" aria-valuenow="60"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </div>
 
-      </div>
-    </section><!-- End Skills Section -->
+        <div class="col-lg-6">
+          <div class="progress">
+            <span class="skill">Python <i class="val">80%</i></span>
+            <div class="progress-bar bg-primary" style="width: 80%;" role="progressbar" aria-valuenow="80"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
 
-    <!-- ======= Resume Section ======= -->
+          <div class="progress">
+            <span class="skill">WordPress/CMS <i class="val">40%</i></span>
+            <div class="progress-bar bg-danger" style="width: 40%;" role="progressbar" aria-valuenow="40"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Bootstrap <i class="val">75%</i></span>
+            <div class="progress-bar bg-secondary" style="width: 75%;" role="progressbar" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Git, GitHub, GitLab <i class="val">90%</i></span>
+            <div class="progress-bar bg-dark" style="width: 90%;" role="progressbar" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+{% comment %} 
+
     <section id="resume" class="resume">
       <div class="container">
 
@@ -306,7 +665,83 @@
 
 
       </div>
-    </section><!-- End Resume Section -->
+    </section><!-- End Resume Section --> {% endcomment %}
+    <section id="resume" class="resume-section">
+      <div class="container">
+  
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>I am a developer with experience in Python , as well as a range of other skills including full stack development, JavaScript, Bootstrap, and Figma. I have completed several individual projects and am always looking for new opportunities and challenges to improve my skills and advance my career. I am currently seeking new opportunities and am excited to tackle challenging problems and grow as a developer.</p>
+        </div>
+  
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>M.Abubakar</h4>
+              <p><em>I am a developer with experience in Python , as well as a range of other skills including full stack development, JavaScript, Bootstrap</em></p>
+              <ul>
+                <li>lahore, Punjab</li>
+                <li>+92 300 0236952</li>
+                <li>maharabubakr616@gmail.com</li>
+              </ul>
+            </div>
+  
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Technology</h4>
+              <p><em>Lahore University</em></p>
+            </div>
+          </div>
+  
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Python Intern</h4>
+              <h5>2022 - Present</h5>
+              <p><em>Lahore, Pakistan</em></p>
+              <ul>
+                <li>Lead in the design, development, and implementation of the custom, layout, and production
+                  communication materials</li>
+                <li>Delegate tasks to the 7 members of the development team and provide counsel on all aspects of the
+                  project.</li>
+                <li>Supervise the assessment of all projects in order to ensure quality and accuracy of the
+                  software</li>
+                <li>Oversee the efficient use of production project.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Graphic Designer Intern</h4>
+              <h5>2020</h5>
+              <p><em>Lahore, Pakistan</em></p>
+              <ul>
+                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
+                  advertisements).</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="text-center">
+          <a class="btn btn-primary download-button" href="{% static 'resume/Quotation - S00002.pdf' %}" download="my-file.pdf">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+        <div class="text-center my-3">
+          <a class="btn btn-primary download-button" href="#contact">
+            <i class="fas fa-download"></i> Contact Me
+          </a>
+        </div>
+  
+      </div>
+    </section>
+
+
+
+
 
 
 
@@ -344,7 +779,7 @@
 
           </div>
 
-
+{% comment %} 
           <!-- ======= Portfolio Section ======= -->
           <section id="portfolio" class="portfolio section-bg">
             <div class="container">
@@ -474,10 +909,82 @@
 
             </div>
           </section><!-- End Portfolio Section -->
+          {% endcomment %}
+          <section id="portfolio" class="portfolio-section">
+            <div class="container">
+        
+              <div class="section-title">
+                <h2>Projects</h2>
+                <p>Explore some of my latest projects below.</p>
+              </div>
+        
+              <div class="row">
+        
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                  <div class="portfolio-wrap">
+                    <img src="img/portfolio/portfolio-1.jpg" class="img-fluid" alt="Project 1">
+                    <div class="portfolio-info">
+                      <h4>Project 1</h4>
+                      <p>Web Development</p>
+                      <div class="portfolio-links">
+                        <a href="img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                          title="Project 1"><i class="bx bx-plus"></i></a>
+                        <a href="/project" title="More Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                  <div class="portfolio-wrap">
+                    <img src="img/portfolio/portfolio-2.jpg" class="img-fluid" alt="Project 2">
+                    <div class="portfolio-info">
+                      <h4>Project 2</h4>
+                      <p>Mobile App Development</p>
+                      <div class="portfolio-links">
+                        <a href="img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                          title="Project 2"><i class="bx bx-plus"></i></a>
+                        <a href="/project" title="More Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                  <div class="portfolio-wrap">
+                    <img src="img/portfolio/portfolio-3.jpg" class="img-fluid" alt="Project 3">
+                    <div class="portfolio-info">
+                      <h4>Project 3</h4>
+                      <p>Graphic Design</p>
+                      <div class="portfolio-links">
+                        <a href="img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                          title="Project 3"><i class="bx bx-plus"></i></a>
+                        <a href="/project" title="More Details"><i class="bx bx-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Add more portfolio items as needed -->
+        
+              </div>
+        
+            </div>
+          </section>
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js"></script>
+          <script>
+            baguetteBox.run('.portfolio-container');
+          </script>
+        
          
+        
+
+
+
 
           <!-- ======= Contact Section ======= -->
-          <section id="contact" class="contact">
+          {% comment %} <section id="contact" class="contact">
             <div class="container">
 
               <div class="section-title">
@@ -550,7 +1057,7 @@
                     <div class="my-3">
                       <div class="loading">Loading</div>
                       {% comment %} <div class="error-message"></div> {% endcomment %}
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                      {% comment %} <div class="sent-message">Your message has been sent. Thank you!</div>
                     </div>
                     <div class="text-center"><button type="submit" class="btn btn-primary">submit</button>
                     </div>
@@ -560,11 +1067,130 @@
               </div>
 
             </div>
-          </section><!-- End Contact Section -->
+          </section><!-- En  {% endcomment %}
 
+            <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Thank you for visiting and spending your valuable time with us. I hope you found what you were looking for.
+          I am always open to work on challenging operations and put my skills to use. If you are in need of someone
+          with my skills and experience, please don't hesitate to contact me. I am confident that I can contribute value
+          to your team and help achieve your business goals. Thank you again for visiting. I look forward to hearing
+          from you soon.</p>
+      </div>
+
+      <div class="row" data-aos="fade-in">
+
+        <!-- Contact Information -->
+        <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>Lahore, Pakistan</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>maharabubakr616@gmail.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+92 300 0236952</p>
+            </div>
+
+            <div class="skype">
+              <i class="bi bi-skype"></i>
+              <h4>Skype:</h4>
+              <p>+92 300 0236952</p>
+            </div>
+
+            <div class="linkedin">
+              <i class="bi bi-linkedin"></i>
+              <h4>LinkedIn:</h4>
+              <a href="https://www.linkedin.com/in/MuhammadAbubakar" target="_blank">M.Abubakar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <form action="/#contact" method="post" class="php-email-form">
+            {% csrf_token %}
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="email">Your Email</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Custom Script -->
+  <script>
+    // Initialize AOS Library
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>M.Abubakar</span></strong>
+    </div>
+    <div class="credits">
+      Designed by <a href="www.linkedin.com/in/MuhammadAbubakar">M.Abubakar</a>
+    </div>
+  </div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
+  <footer id="footer">
+    
+  </footer>
  
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
